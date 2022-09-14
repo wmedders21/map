@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Map Sample</title>
+    <link rel="stylesheet" href="css/maps.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin="">
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        initMap(mapInfo)
+      });
+    </script>
+  </head>
+  <body>
+    <div id="map">
+
+    </div>
+      <script type="text/javascript">
+        const mapInfo = {
+                    "map_center": [
+                        39.744631840336865,
+                        -104.99531182663148
+                    ],
+                    "markers": [
+                        {
+                            "Vibe Coffee and Wine": [
+                                39.74601,
+                                -104.99612
+                            ]
+                        },
+                        {
+                            "Little Owl Coffee": [
+                                39.7505164957921,
+                                -104.999718748432
+                            ]
+                        },
+                        {
+                            "Fluid Coffee Bar": [
+                                39.74681255902583,
+                                -104.99208676232941
+                            ]
+                        },
+                        {
+                            "Novo Coffee": [
+                                39.7443251468664,
+                                -104.989716522396
+                            ]
+                        },
+                        {
+                            "The Molecule Effect - Santa Fe Art District": [
+                                39.735495,
+                                -104.9989171
+                            ]
+                        }
+                    ]
+                };
+      </script>
+      <script src='map.js'>
+        document.addEventListener("DOMContentLoaded", function(){
+          initMap(mapInfo)
+        });
+      </script>
+  </body>

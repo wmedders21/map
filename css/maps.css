@@ -1,0 +1,8 @@
+body {
+  background-color: slategray;
+}
+
+#map {
+    width: 750px;
+    height: 520px;
+}
